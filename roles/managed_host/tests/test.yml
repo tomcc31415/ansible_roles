@@ -1,4 +1,4 @@
 ---
 - hosts: localhost
   roles:
-    - sat6register
+    - managed_host
