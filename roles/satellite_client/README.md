@@ -1,7 +1,6 @@
 # satellite_client
 
-This role allows the registration of baremetal,virtual and cloud instances running Red Hat Enterprise Linux 5,6,7 against a Red Hat Satellite 6 server. The role gives you the option to register your host/s with or without puppet as a configuration management tool.  
-It also gives you the ability to update the host/s to the latest patch level during registration. If you choose puppet as a configuration management tool you can add a hostgroup to the ansible run which will apply your puppet classes within that hostgroup during registration.  
+This role allows the registration of baremetal,virtual and cloud instances running Red Hat Enterprise Linux 5,6,7 against a Red Hat Satellite 6 server. The role gives you the option to register your hosts with or without puppet as a configuration management tool. It also gives you the ability to update the hosts to the latest patch level during registration. If you choose puppet as a configuration management tool you can add a hostgroup to the ansible run which will apply your puppet classes within that hostgroup during registration.  
 
 ## Requirements
 
