@@ -27,7 +27,9 @@
 # If hostgroup == 'false' (i.e. install the client just as a content host)
 #
 - name: Install the katello-ca-consumer-latest.noarch.rpm from {{ sat6_fqdn }}
-  command:  "/usr/bin/yum -y localinstall http://{{ sat6_fqdn }}/pub/katello-ca-consumer-latest.noarch.rpm"
+  yum:
+    name: http://{{ sat6_fqdn }}/pub/katello-ca-consumer-latest.noarch.rpm
+    state: present
   when: hostgroup == 'false'
 
 - name: Register to Satellite 6 only for content 
