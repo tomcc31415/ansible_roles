@@ -1,3 +1,2 @@
 ---
 admin_pass: "{{ vault_admin_pass }}"
-test: test
