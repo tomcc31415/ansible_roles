@@ -48,6 +48,6 @@
 
 - name: Update the host to latest errata within the attached content view
   yum: 
-    name: * 
+    name: '*'
     state: latest
   when: updatehost == 'true'
