@@ -63,5 +63,5 @@
     name: "{{ dbuser }}"
     password: "{{ dbpass }}"
     priv: "*.*:ALL"
-    host: localhost
+    host: "%"
     state: present

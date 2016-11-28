@@ -7,10 +7,11 @@
   <a href=http://{{ ansible_default_ipv4.address }}/index.html>Homepage</a>
  </br>
 <?php 
- Print "Hello, World! I am a web server configured using Ansible and I am : ";
+ Print "This is web server ";
  echo exec('hostname');
+ Print ", configured using Ansible";
  Print  "</BR>";
- echo  "List of Databases: </BR>";
+ echo  "The following databases are configured: </BR>";
         $link = mysqli_connect('{{ ansible_default_ipv4.address }}', '{{ dbuser }}', '{{ dbpass }}') or die(mysqli_connect_error($link));
         $res = mysqli_query($link, "SHOW DATABASES;");
         while ($row = mysqli_fetch_assoc($res)) {
