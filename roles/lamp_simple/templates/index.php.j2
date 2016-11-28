@@ -1,6 +1,6 @@
 <html>
  <head>
-  <title>Ansible Application</title>
+  <title>Ansible-Managed Application</title>
  </head>
  <body>
  </br>
@@ -11,7 +11,7 @@
  echo exec('hostname');
  Print  "</BR>";
  echo  "List of Databases: </BR>";
-        $link = mysqli_connect('{{ ansible_default_ipv4.address }}', '{{ dbuser }}', '{{ upassword }}') or die(mysqli_connect_error($link));
+        $link = mysqli_connect('{{ ansible_default_ipv4.address }}', '{{ dbuser }}', '{{ dbpass }}') or die(mysqli_connect_error($link));
         $res = mysqli_query($link, "SHOW DATABASES;");
         while ($row = mysqli_fetch_assoc($res)) {
                 echo $row['Database'] . "\n";
