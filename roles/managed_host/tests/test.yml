@@ -1,4 +1,0 @@
----
-- hosts: localhost
-  roles:
-    - managed_host
