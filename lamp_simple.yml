@@ -5,7 +5,7 @@
   hosts: all
   vars_files:
     - "roles/lamp_simple/group_vars/all"
-  remote_user: ansible-remote
+  remote_user: ec2-user
   roles:
     - lamp_simple
 
