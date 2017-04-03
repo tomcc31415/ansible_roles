@@ -18,6 +18,6 @@
     state: started 
     enabled: yes
     
-- name: set timezone to Asia/Tokyo
+- name: set timezone to Europe/Amsterdam
   timezone:
     name: Europe/Amsterdam
