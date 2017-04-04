@@ -21,3 +21,6 @@
 - name: set timezone to Europe/Amsterdam
   timezone:
     name: Europe/Amsterdam
+    
+- hostname:
+    name: pon01
