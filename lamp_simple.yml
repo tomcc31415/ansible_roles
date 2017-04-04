@@ -1,7 +1,7 @@
 ---
 # This playbook deploys ta simple LAMP stack
 
-- name: Setup the server with a simple LAMP stack
+- name: Make sure the correct timezone is setup and ntp is running
   hosts: all
   vars_files:
     - "roles/lamp_simple/group_vars/all"
