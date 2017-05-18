@@ -1,5 +1,5 @@
 ---
-# This playbook deploys ta simple LAMP stack
+# This playbook deploys a simple LAMP stack
 
 - name: Make sure the correct timezone is setup and ntp is running
   hosts: all
